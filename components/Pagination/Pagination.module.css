@@ -1,0 +1,17 @@
+.buttonPagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--button);
+  border-radius: 12px;
+  background: transparent;
+  width: 156px;
+  height: 44px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+
+.buttonPagination:hover {
+  border: 1px solid var(--button-hover);
+}

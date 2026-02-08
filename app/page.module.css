@@ -1,0 +1,141 @@
+.main {
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 52px;
+  width: 1440px;
+  padding: 436px 329px 60px 328px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: image-set(
+    url(/bgImage/bgImg.jpg) 1x,
+    url(/bgImage/bgImg-2x.jpg) 2x
+  );
+}
+.heroWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  width: 783px;
+  height: 204px;
+}
+
+.heroText {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 783px;
+  height: 120px;
+}
+
+.heroTitle {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white);
+  margin: 0;
+}
+
+.heroDescription {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  text-align: center;
+  color: var(--white);
+  margin: 0;
+}
+
+.heroButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  border-radius: 12px;
+  padding: 12px 99px;
+  height: 44px;
+  background: var(--button);
+  border: none;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.heroButton :hover {
+  background: var(--button-hover);
+}
+
+/* =============LOADING */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #3470ff;
+  border-top-color: #0b44cd;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text {
+  color: var(--main);
+  font-size: 14px;
+}
+
+/* =============NOT-FOUND */
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 783px;
+  height: 120px;
+  margin: auto;
+}
+.title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--main);
+  margin: 0;
+}
+
+.description {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  text-align: center;
+  color: var(--main);
+  margin: 0;
+}

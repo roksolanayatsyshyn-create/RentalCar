@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+  padding: 84px 120px 104px 120px;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.carsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
